@@ -24,3 +24,10 @@ game_font = pygame.font.Font('assets/font/Flappy.TTF', 40)
 score = 0
 high_score = 0
 active_score = True
+
+# ---------- #
+create_pipe = pygame.USEREVENT
+create_flap = pygame.USEREVENT + 1
+pygame.time.set_timer(create_flap, 100)
+pygame.time.set_timer(create_pipe, 1200)
+# ---------- #
